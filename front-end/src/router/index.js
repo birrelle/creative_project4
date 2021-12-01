@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Contact from '../views/Cart.vue'
 import About from '../views/About.vue'
 import Shop from '../views/Shop.vue'
-import Product from '../views/Product.vue'
+// import Product from '../views/Product.vue'
 import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
@@ -30,11 +30,11 @@ const routes = [
     name: "About",
     component: About
   },
-  {
-    path: '/product/:id',
-    name: "product",
-    component: Product
-  },
+  // {
+  //   path: '/product/:id',
+  //   name: "product",
+  //   component: Product
+  // },
   {
     path: '/admin',
     name: 'admin',

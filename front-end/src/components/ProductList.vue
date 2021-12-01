@@ -7,9 +7,7 @@
         <p>{{product.size}}</p>
       </div>
       <div class="image">
-        <router-link :to="'/product/' + product.id">
-          <img :src="product.path">
-        </router-link>
+        <img :src="product.path">
       </div>
       <div class="price">
         <h2>{{product.price}}</h2>
