@@ -5,6 +5,7 @@
       <div class="info">
         <h1>{{product.title}}</h1>
         <p>{{product.size}}</p>
+	<h3>{{product.textarea}}</h3>
       </div>
       <div class="image">
         <img :src="product.path">
@@ -74,7 +75,7 @@ export default {
   background: #ebe0d4 ;
   color: #000;
   padding: 10px 30px;
-  height: 80px;
+  height: 140px;
   border-top-left-radius:15px;
   border-top-right-radius:15px;
   font-family: 'Montserrat', sans-serif !important;
@@ -89,6 +90,10 @@ export default {
 .info h2 {
   font-size: 16px;
   
+}
+
+.info h3 {
+  font-size:14px;
 }
 
 .info p {

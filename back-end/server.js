@@ -49,7 +49,7 @@ app.get('/api/items', async (req, res) => {
 // Configure multer so that it will upload to '../front-end/public/images'
 const multer = require('multer')
 const upload = multer({
-  dest: '../front-end/public/images/product',
+  dest: '/var/www/cp4.emilyslittle.com/images/product/',
   limits: {
     fileSize: 10000000
   }
@@ -101,7 +101,6 @@ app.put('/api/items/:id', async (req, res) => {
     item.textarea = req.body.textarea;
     item.price = req.body.price;
     item.size = req.body.size;
-    item.path = req.body.path;
     await item.save();
     res.send(item);
   } catch (error) {
